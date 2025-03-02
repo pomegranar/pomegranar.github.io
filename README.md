@@ -1,1 +1,0 @@
-# pomegranar.github.io

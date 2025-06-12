@@ -7,8 +7,8 @@ export function ThemeWrapper({ children }: { children: React.ReactNode }) {
     <ThemeProvider attribute="class" enableSystem={true} disableTransitionOnChange>
       <Theme 
         grayColor="sage" 
-        accentColor="ruby" 
-        radius="none"
+        accentColor="ruby"
+        radius="medium"
         className="radix-themes"
         scaling="110%"
       >

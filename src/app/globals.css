@@ -107,3 +107,7 @@ code, pre {
 [data-accent-em], .rt-Em {
   font-family: var(--font-lora), serif !important;
 }
+
+.anar-title {
+  font-size: 100px;
+}

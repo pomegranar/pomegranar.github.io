@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <main className="">
       <div className="absolute top-0">
-        <div className="w-[100vw] h-[400px] relative flex items-center justify-around bg-blend-normal bg-gradient-to-l from-transparent to-background/50 in">
+        <div className="w-[100vw] h-[400px] relative flex items-center justify-around bg-blend-normal bg-gradient-to-b from-transparent to-background/80 in">
           <Image
             src={effectiveTheme === "dark" ? "/metro.jpg" : "/beach.jpg"}
             alt={effectiveTheme === "dark" ? "Dark metro" : "Sunny beach"}
@@ -41,23 +41,25 @@ export default function Home() {
             priority={true}
             className="object-cover -z-10"
           />
-          <div className="relative flex flex-col items-baseline translate-y-8">
-            <Em>Hello! I’m</Em>
-            <Text size="9" className="font-black font-stretch-extra-expanded">
-              Anar
+          <div className="relative flex flex-col items-baseline">
+            <Text size="7" className="text-white/80 drop-shadow-lg font-bold">
+              Нямбаярын
             </Text>
-            <Text size="8" className="font-bold">
-              Nyambayar
+            <Text size="9" className=" text-white drop-shadow-xl font-black anar-title font-stretch-extra-expanded">
+              Анар
             </Text>
+            <br/>
+            <Text className="text-green-700 dark:text-orange-400">Веб, хиймэл оюун ухааны систем хөгжүүлэгч</Text>
+            {/*<Em>Веб болон хиймэл оюун ухаант систем хөгжүүлэгч</Em>*/}
           </div>
-          <div className="shadow-xl w-[250px] h-[250px] rounded-full border-4 border-white">
-          <AspectRatio ratio={1} className="border-8 border-white">
+          <div className="w-[250px] h-[250px]">
+          <AspectRatio ratio={1} className="">
             <Image
               src="/anar.png"
               alt="Portrait of Anar."
               width={700}
               height={700}
-              className="object-fill rounded-4xl shadow-xl"
+              className="object-fill rounded-2xl shadow-xl "
             />
           </AspectRatio>
           </div>
